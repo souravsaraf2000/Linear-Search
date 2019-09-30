@@ -3,11 +3,13 @@
 
 int main()
 {
-  int array[100], search, c, n;
+  int search, c, n;
 
   printf("Enter the number of elements in array\n");
   scanf("%d", &n); /* Taking input for no of elements in array*/
-
+  
+  int *array = (int *)malloc(n*sizeof(int));
+  
   printf("Enter %d integer(s) :\n", n);
 
   for (c = 0; c < n; c++)
