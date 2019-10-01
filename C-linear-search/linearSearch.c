@@ -3,7 +3,7 @@
 
 int main()
 {
-  int search, c, n;
+  int search, c, n,i;
 
   printf("Enter the number of elements in array\n");
   scanf("%d", &n); /* Taking input for no of elements in array*/
@@ -17,7 +17,8 @@ int main()
 
   printf("Enter a number to search\n");
   scanf("%d", &search); /* Taking input for element to search*/
-
+  printf("Searching for element......");
+  for(i=0;i<=1000000000;i++){}//This is a delay loop
   for (c = 0; c < n; c++)
   {
     if (array[c] == search)    /* If element is found */
